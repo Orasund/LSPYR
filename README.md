@@ -17,3 +17,5 @@ elm-spa build
 ```bash
 elm-spa server
 ```
+
+develop is deployed on [netlify](netlify.com) (login with Github)
