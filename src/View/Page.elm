@@ -52,14 +52,21 @@ navbar id route list =
             ]
         |> List.singleton
         |> Html.nav
-            [ Attr.class "navbar navbar-expand navbar-dark bg-primary rounded"
+            [ Attr.class "navbar navbar-expand navbar-dark bg-primary"
             , Attr.style "z-index" "3"
             ]
 
 
 view : Route -> Html msg -> List (Html msg)
 view route content =
-    [ [ [ "Lisa Payr"
+    [ [ ( "Angebot", Home_ )
+      , ( "Methode", Method )
+      , ( "Fragen & Antworten", Faq )
+      , ( "Über Mich", About )
+      , ( "Kontakt", Contact )
+      ]
+        |> navbar "myNavbar" route
+    , [ [ "Lisa Payr"
             |> Html.text
             |> List.singleton
             |> Html.h1 []
@@ -77,37 +84,38 @@ view route content =
                 , Attr.style "height" "0"
                 , Attr.style "left" "20%"
                 , Attr.style "top" "20px"
-                , Attr.style "z-index" "2"
+                , Attr.style "z-index" "3"
                 ]
-      , Html.img
-            [ Attr.src "header.png"
-            , Attr.style "width" "100%"
-            , Attr.style "position" "relative"
-            , Attr.style "z-index" "1"
-            , Config.imageXOffset
-            ]
-            []
       ]
         |> Html.div
-            [ Attr.style "height" "185px"
+            [ Attr.style "height" "155px"
             , Attr.style "width" "100%"
             , Attr.style "max-width" "910px"
             , Attr.style "margin-left" "auto"
             , Attr.style "margin-right" "auto"
-            , Attr.class "d-none d-md-block"
             ]
-    , [ [ ( "Angebot", Home_ )
-        , ( "Methode", Method )
-        , ( "Fragen & Antworten", Faq )
-        , ( "Über Mich", About )
-        , ( "Kontakt", Contact )
-        ]
-            |> navbar "myNavbar" route
+    , [ Html.img
+            ([ Attr.src "header.png"
+             , Attr.style "width" "100%"
+             , Attr.style "z-index" "1"
+             ]
+                ++ Config.imageOffset
+            )
+            []
+            |> List.singleton
+            |> Html.div
+                [ Attr.style "height" "0px"
+                , Attr.style "width" "113.5%"
+                , Attr.style "max-width" "910px"
+                , Attr.style "margin-left" "auto"
+                , Attr.style "margin-right" "auto"
+                ]
       , content
             |> List.singleton
             |> Html.div
                 [ Attr.class "card-body"
                 , Attr.style "background-color" "transparent"
+                , Attr.style "z-index" "2"
                 ]
             |> List.singleton
             |> Html.div

@@ -4,9 +4,12 @@ import Html exposing (Attribute)
 import Html.Attributes as Attr
 
 
-imageXOffset : Attribute msg
-imageXOffset =
-    Attr.style "right" "0.5%"
+imageOffset : List (Attribute msg)
+imageOffset =
+    [ Attr.style "position" "relative"
+    , Attr.style "right" "6.5%"
+    , Attr.style "top" "-150px"
+    ]
 
 
 imageMaxWidth : Attribute msg
