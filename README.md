@@ -12,7 +12,7 @@ deployment to heroku has been set up to be automatic.
 elm-spa build
 ```
 
-## Run
+## Build & Run
 
 ```bash
 elm-spa server

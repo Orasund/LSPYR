@@ -6,7 +6,7 @@ import Html.Attributes as Attr
 
 view : String -> ( List (Html msg), List (Html msg) ) -> Html msg
 view name ( c1, c2 ) =
-    [ Html.h1 [] [ Html.text name ]
+    [ Html.h2 [] [ Html.text name ]
     , [ c1
             |> Html.div [ Attr.class "col-4" ]
       , c2
