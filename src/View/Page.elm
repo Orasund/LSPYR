@@ -120,6 +120,7 @@ view route content =
             |> List.singleton
             |> Html.div
                 [ Attr.class "card"
+                , Config.roundedBorder
                 ]
       , [ "Lisa Payr"
         , "Telefon: " ++ Config.telefonNr

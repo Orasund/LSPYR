@@ -34,8 +34,6 @@ Tel.: """
             ++ """  
 Email: """
             ++ Config.email
-            ++ """
-"""
             |> Markdown.toHtml []
         , "Als Kontakt Hinzufügen"
             |> Html.text
@@ -44,6 +42,7 @@ Email: """
                 [ Attr.class "btn btn-primary"
                 , Attr.href "contact.vcf"
                 , Attr.attribute "role" "button"
+                , Config.roundedBorder
                 ]
         ]
             |> SingleColumn.view "Kontakt"

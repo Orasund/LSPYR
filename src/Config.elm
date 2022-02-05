@@ -36,3 +36,8 @@ telefonNr =
 email : String
 email =
     "**info@ergotherapie-payr.at**"
+
+
+roundedBorder : Attribute msg
+roundedBorder =
+    Attr.style "border-radius" "19px"

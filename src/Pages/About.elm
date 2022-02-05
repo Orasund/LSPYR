@@ -1,5 +1,6 @@
 module Pages.About exposing (page)
 
+import Config
 import Gen.Params.About exposing (Params)
 import Gen.Route exposing (Route)
 import Html
@@ -24,7 +25,7 @@ view : Route -> View msg
 view route =
     { title = "Einzelförderung für Schulkinder"
     , body =
-        ( Html.img [ Attr.src "profil.jpeg", Attr.class "rounded", Attr.style "width" "100%" ] []
+        ( Html.img [ Attr.src "profil.jpeg", Config.roundedBorder, Attr.style "width" "100%" ] []
             |> List.singleton
         , """
 ##### Lebenslauf
@@ -36,8 +37,7 @@ view route =
 * 2006 - 2009: Berufsbegleitender Lehrgang in Waldorfpädagogik mit der Fachrichtung Klassenlehrerin an der Akademie für Anthroposophische Erwachsenenbildung, Waldorf Salzburg
 * Seit 2008 Klassenlehrerin an der Freien Waldorfschule Innsbruck
 * 2016 - 1017: Berufsbegleitender Lehrgang zur diplomierten Legasthenietrainierin und zur diplomierten Dyskalkulietrainerin an der EÖDL, Klagenfurt
-* September 2017: Aufnahme der freiberuflichen Ausübung des ergotherapeutischen Dienstes
-        """
+* September 2017: Aufnahme der freiberuflichen Ausübung des ergotherapeutischen Dienstes"""
             |> Markdown.toHtml []
             |> List.singleton
         )

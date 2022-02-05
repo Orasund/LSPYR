@@ -36,8 +36,7 @@ view route =
 
 ##### Legasthenie- und Dyskalkulietraining
 
-* Diplomierte Legasthenie- bzw. Dyskalkulietrainer sind befähigt, eine Lese-Rechtschreibschwäche bzw. eine Rechenschwäche auf pädagogisch-didaktischer Ebene zu diagnostizieren und Betroffene adäquat zu fördern.
-        """
+* Diplomierte Legasthenie- bzw. Dyskalkulietrainer sind befähigt, eine Lese-Rechtschreibschwäche bzw. eine Rechenschwäche auf pädagogisch-didaktischer Ebene zu diagnostizieren und Betroffene adäquat zu fördern."""
             |> Markdown.toHtml []
             |> List.singleton
             |> SingleColumn.view "Methode"

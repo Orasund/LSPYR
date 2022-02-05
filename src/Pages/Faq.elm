@@ -59,8 +59,7 @@ Ich bitte Sie, den vereinbarten Termin so früh wie möglich, spätestens jedoch
 
 ##### Was bedeutet Schweigepflicht?
 
-Therapie hat viel mit Vertrauen zu tun. Als Therapeutin unterliege ich der absoluten Schweigepflicht. Ich vernetze mich nur nach Absprache mit den Eltern mit den anderen Berufsgruppen zu den erforderlichen Themen
-        """
+Therapie hat viel mit Vertrauen zu tun. Als Therapeutin unterliege ich der absoluten Schweigepflicht. Ich vernetze mich nur nach Absprache mit den Eltern mit den anderen Berufsgruppen zu den erforderlichen Themen"""
             |> Markdown.toHtml []
             |> List.singleton
             |> SingleColumn.view "Fragen & Antworten"

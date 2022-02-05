@@ -44,8 +44,7 @@ view route =
 
 * Gerne gebe ich Ratschläge, wie das Üben zu Hause gelingen kann.
 * Sind die vereinbarten Stunden zu Ende, bespreche ich mit den Eltern, in wie weit das kurzfristige Ziel erreicht wurde und wie die weitere Entwicklung aussehen könnte.
-* Bedeutsam für eine gute Entwicklung ist das Zusammenwirken aller Erwachsenen, die für das Kind Sorge tragen: Eltern, Erziehende, Lehrkräfte, Therapeuten, zuweisende Ärzte.
-            """
+* Bedeutsam für eine gute Entwicklung ist das Zusammenwirken aller Erwachsenen, die für das Kind Sorge tragen: Eltern, Erziehende, Lehrkräfte, Therapeuten, zuweisende Ärzte."""
             |> Markdown.toHtml []
             |> List.singleton
             |> SingleColumn.view "Angebot"
