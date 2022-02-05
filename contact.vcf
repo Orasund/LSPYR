@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:2.1
+N;CHARSET=ISO-8859-1:Payr;Lisa;;;Ergotherapie
+FN;CHARSET=ISO-8859-1: Lisa Payr
+URL;type=PRIVATE;CHARSET=ISO-8859-1:www.ergotherapie-payr.at
+EMAIL;CHARSET=ISO-8859-1;type=WORK;type=PREF:info@ergotherapie-payr.at
+TEL;type=CELL;type=VOICE:+436504455988
+ADR;CHARSET=ISO-8859-1;type=WORK;type=pref:;;Jahnstraﬂe 5;Innsbruck;;6020;÷sterreich
+LABEL;WORK;PREF;ENCODING=QUOTED-PRINTABLE;CHARSET=ISO-8859-1:Jahnstraﬂe 5=0D=0A=
+6020 Innsbruck ÷sterreich
+END:VCARD
