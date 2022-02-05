@@ -52,8 +52,8 @@ navbar id route list =
             ]
         |> List.singleton
         |> Html.nav
-            [ Attr.class "navbar navbar-expand navbar-dark bg-primary"
-            , Attr.style "z-index" "3"
+            [ Attr.class "navbar navbar-expand navbar-dark bg-primary fixed-top"
+            , Attr.style "z-index" "5"
             ]
 
 
@@ -83,12 +83,12 @@ view route content =
                 [ Attr.style "position" "relative"
                 , Attr.style "height" "0"
                 , Attr.style "left" "20%"
-                , Attr.style "top" "20px"
+                , Attr.style "top" "80px"
                 , Attr.style "z-index" "3"
                 ]
       ]
         |> Html.div
-            [ Attr.style "height" "155px"
+            [ Attr.style "height" "195px"
             , Attr.style "width" "100%"
             , Attr.style "max-width" "910px"
             , Attr.style "margin-left" "auto"

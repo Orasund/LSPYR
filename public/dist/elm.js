@@ -11434,8 +11434,8 @@ var $author$project$View$Page$navbar = F3(
 			$elm$html$Html$nav,
 			_List_fromArray(
 				[
-					$elm$html$Html$Attributes$class('navbar navbar-expand navbar-dark bg-primary'),
-					A2($elm$html$Html$Attributes$style, 'z-index', '3')
+					$elm$html$Html$Attributes$class('navbar navbar-expand navbar-dark bg-primary fixed-top'),
+					A2($elm$html$Html$Attributes$style, 'z-index', '5')
 				]),
 			$elm$core$List$singleton(
 				A2(
@@ -11540,7 +11540,7 @@ var $author$project$View$Page$view = F2(
 				$elm$html$Html$div,
 				_List_fromArray(
 					[
-						A2($elm$html$Html$Attributes$style, 'height', '155px'),
+						A2($elm$html$Html$Attributes$style, 'height', '195px'),
 						A2($elm$html$Html$Attributes$style, 'width', '100%'),
 						A2($elm$html$Html$Attributes$style, 'max-width', '910px'),
 						A2($elm$html$Html$Attributes$style, 'margin-left', 'auto'),
@@ -11555,7 +11555,7 @@ var $author$project$View$Page$view = F2(
 								A2($elm$html$Html$Attributes$style, 'position', 'relative'),
 								A2($elm$html$Html$Attributes$style, 'height', '0'),
 								A2($elm$html$Html$Attributes$style, 'left', '20%'),
-								A2($elm$html$Html$Attributes$style, 'top', '20px'),
+								A2($elm$html$Html$Attributes$style, 'top', '80px'),
 								A2($elm$html$Html$Attributes$style, 'z-index', '3')
 							]),
 						_List_fromArray(
