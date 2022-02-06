@@ -41,3 +41,12 @@ email =
 roundedBorder : Attribute msg
 roundedBorder =
     Attr.style "border-radius" "19px"
+
+
+address : String
+address =
+    """
+Lisa Payr  
+Fliederweg 5  
+6063 Rum  
+"""

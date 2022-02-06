@@ -25,14 +25,10 @@ view : Route -> View msg
 view route =
     { title = "Einzelförderung für Schulkinder"
     , body =
-        [ """
-Lisa Payr  
-Jahnstraße 5  
-6020 Innsbruck  
-Tel.: """
+        [ Config.address
+            ++ "  \nTel.: "
             ++ Config.telefonNr
-            ++ """  
-Email: """
+            ++ "  \nEmail: "
             ++ Config.email
             |> Markdown.toHtml []
         , "Als Kontakt Hinzufügen"

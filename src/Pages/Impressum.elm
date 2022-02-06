@@ -28,11 +28,9 @@ view route =
 ##### (A) Impressum
 
 gemäß §6 Teledienstegesetz (TDG) §6 Mediendienste-Staatsvertrag(MDSTv) und §4 Abs. 3 Bundesdatenschutzgesetz (BDSG)
-
-Lisa Payr  
-Jahnstraße 5  
-6020 Innsbruck  
-
+"""
+            ++ Config.address
+            ++ """
 Tel.: """
             ++ Config.telefonNr
             ++ """
