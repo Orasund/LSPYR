@@ -36,7 +36,7 @@ view route =
             |> List.singleton
             |> Html.a
                 [ Attr.class "btn btn-primary"
-                , Attr.href "contact.vcf"
+                , Attr.href "assets/contact.vcf"
                 , Attr.attribute "role" "button"
                 , Config.roundedBorder
                 ]

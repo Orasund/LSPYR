@@ -1,3 +1,7 @@
 {
-  "root": "public/"
+  "root": "public/",
+  "routes": {
+    "/assets/*": "/assets/",
+    "/**": "index.html"
+  }
 }

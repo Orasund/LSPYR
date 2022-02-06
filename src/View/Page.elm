@@ -95,7 +95,7 @@ view route content =
             , Attr.style "margin-right" "auto"
             ]
     , [ Html.img
-            ([ Attr.src "header.png"
+            ([ Attr.src "assets/header.png"
              , Attr.style "width" "100%"
              , Attr.style "z-index" "1"
              ]

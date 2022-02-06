@@ -25,7 +25,7 @@ view : Route -> View msg
 view route =
     { title = "Einzelförderung für Schulkinder"
     , body =
-        ( Html.img [ Attr.src "profil.jpeg", Config.roundedBorder, Attr.style "width" "100%" ] []
+        ( Html.img [ Attr.src "assets/profil.jpeg", Config.roundedBorder, Attr.style "width" "100%" ] []
             |> List.singleton
         , """
 ##### Lebenslauf

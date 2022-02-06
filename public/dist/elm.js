@@ -11605,7 +11605,7 @@ var $author$project$View$Page$view = F2(
 								_Utils_ap(
 									_List_fromArray(
 										[
-											$elm$html$Html$Attributes$src('header.png'),
+											$elm$html$Html$Attributes$src('assets/header.png'),
 											A2($elm$html$Html$Attributes$style, 'width', '100%'),
 											A2($elm$html$Html$Attributes$style, 'z-index', '1')
 										]),
@@ -11658,7 +11658,7 @@ var $author$project$Pages$About$view = function (route) {
 							$elm$html$Html$img,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$src('profil.jpeg'),
+									$elm$html$Html$Attributes$src('assets/profil.jpeg'),
 									$author$project$Config$roundedBorder,
 									A2($elm$html$Html$Attributes$style, 'width', '100%')
 								]),
@@ -11711,7 +11711,7 @@ var $author$project$Pages$Contact$view = function (route) {
 						_List_fromArray(
 							[
 								$elm$html$Html$Attributes$class('btn btn-primary'),
-								$elm$html$Html$Attributes$href('contact.vcf'),
+								$elm$html$Html$Attributes$href('assets/contact.vcf'),
 								A2($elm$html$Html$Attributes$attribute, 'role', 'button'),
 								$author$project$Config$roundedBorder
 							]),
