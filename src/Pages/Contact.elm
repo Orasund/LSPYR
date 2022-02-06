@@ -37,6 +37,7 @@ view route =
             |> Html.a
                 [ Attr.class "btn btn-primary"
                 , Attr.href "assets/contact.vcf"
+                , Attr.target "_blank"
                 , Attr.attribute "role" "button"
                 , Config.roundedBorder
                 ]

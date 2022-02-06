@@ -11676,6 +11676,7 @@ var $author$project$Pages$About$page = F2(
 			});
 	});
 var $author$project$Config$address = '\nLisa Payr  \nFliederweg 5  \n6063 Rum  \n';
+var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
 var $author$project$View$SingleColumn$view = F2(
 	function (name, content) {
 		return A2(
@@ -11712,6 +11713,7 @@ var $author$project$Pages$Contact$view = function (route) {
 							[
 								$elm$html$Html$Attributes$class('btn btn-primary'),
 								$elm$html$Html$Attributes$href('assets/contact.vcf'),
+								$elm$html$Html$Attributes$target('_blank'),
 								A2($elm$html$Html$Attributes$attribute, 'role', 'button'),
 								$author$project$Config$roundedBorder
 							]),
