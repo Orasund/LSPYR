@@ -7,14 +7,9 @@ import Html.Attributes as Attr
 imageOffset : List (Attribute msg)
 imageOffset =
     [ Attr.style "position" "relative"
-    , Attr.style "right" "6.5%"
-    , Attr.style "top" "-150px"
+    , Attr.style "right" "0.5%"
+    , Attr.style "padding-top" "calc(220px - 20%)"
     ]
-
-
-imageMaxWidth : Attribute msg
-imageMaxWidth =
-    Attr.style "max-width" "910px"
 
 
 contentWidth : Attribute msg

@@ -66,7 +66,22 @@ view route content =
       , ( "Kontakt", Contact )
       ]
         |> navbar "myNavbar" route
-    , [ [ "Lisa Payr"
+    , [ Html.img
+            ([ Attr.src "assets/header.png"
+             , Attr.style "width" "100%"
+             , Attr.style "z-index" "1"
+             ]
+                ++ Config.imageOffset
+            )
+            []
+            |> List.singleton
+            |> Html.div
+                [ Attr.style "height" "0px"
+                , Attr.style "width" "100%"
+                , Attr.style "margin-left" "auto"
+                , Attr.style "margin-right" "auto"
+                ]
+      , [ "Lisa Payr"
             |> Html.text
             |> List.singleton
             |> Html.h1 []
@@ -82,35 +97,19 @@ view route content =
             |> Html.div
                 [ Attr.style "position" "relative"
                 , Attr.style "height" "0"
+                , Attr.style "width" "300px"
                 , Attr.style "left" "20%"
                 , Attr.style "top" "80px"
                 , Attr.style "z-index" "3"
                 ]
       ]
         |> Html.div
-            [ Attr.style "height" "195px"
-            , Attr.style "width" "100%"
+            [ Attr.style "width" "100%"
             , Attr.style "max-width" "910px"
             , Attr.style "margin-left" "auto"
             , Attr.style "margin-right" "auto"
             ]
-    , [ Html.img
-            ([ Attr.src "assets/header.png"
-             , Attr.style "width" "100%"
-             , Attr.style "z-index" "1"
-             ]
-                ++ Config.imageOffset
-            )
-            []
-            |> List.singleton
-            |> Html.div
-                [ Attr.style "height" "0px"
-                , Attr.style "width" "113.5%"
-                , Attr.style "max-width" "910px"
-                , Attr.style "margin-left" "auto"
-                , Attr.style "margin-right" "auto"
-                ]
-      , content
+    , [ content
             |> List.singleton
             |> Html.div
                 [ Attr.class "card-body"
@@ -133,6 +132,7 @@ view route content =
         |> Html.div
             [ Config.contentWidth
             , Config.contentMaxWidth
+            , Attr.style "padding-top" "220px"
             , Attr.style "margin-left" "auto"
             , Attr.style "margin-right" "auto"
             , Attr.class "vstack gap-3"
