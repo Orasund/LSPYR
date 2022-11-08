@@ -30,7 +30,7 @@ telefonNr =
 
 email : String
 email =
-    "**info@ergotherapie-payr.at**"
+    "**ergotherapie.payr@gmail.com**"
 
 
 roundedBorder : Attribute msg
